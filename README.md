@@ -1,6 +1,6 @@
 # LivePoll
 
-A live polling tool built for the GUVI Developer Internship task.
+A live polling tool that allows users to create polls, share them, and view results in real time.
 
 ## Stack
 - Frontend: React + Vite
