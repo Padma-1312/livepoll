@@ -12,6 +12,11 @@ A live polling tool that allows users to create polls, share them, and view resu
 - Frontend: https://livepoll-frontend-utrs.onrender.com
 - Backend: https://livepoll-mn4b.onrender.com
 
+## Live Demo
+
+- Frontend: https://livepoll-frontend-utrs.onrender.com
+- Backend: https://livepoll-mn4b.onrender.com
+
 ## Features
 - Signup/login with JWT authentication
 - Authenticated poll creation
