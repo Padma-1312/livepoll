@@ -10,7 +10,7 @@ import React, { useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import './style.css';
 
-const API = 'http://192.168.31.46:8080/api';
+const API = import.meta.env.VITE_API_URL || 'http://192.168.31.46:8080/api';
 
 function App() {
     const [path] = useState(location.pathname);
