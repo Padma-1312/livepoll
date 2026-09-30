@@ -52,7 +52,7 @@ if redisURL != "" {
  db.Collection("users").Indexes().CreateOne(ctx, mongo.IndexModel{Keys:bson.D{{Key:"email",Value:1}}, Options:options.Index().SetUnique(true)})
 
  router := gin.Default()
- router.Use(cors.New(cors.Config{AllowOrigins: []string{getenv("FRONTEND_URL", "http://localhost:5173"), "http://localhost:5173", "http://192.168.31.46:5173"},, AllowMethods:[]string{"GET","POST","OPTIONS"}, AllowHeaders:[]string{"Origin","Content-Type","Authorization"}, AllowCredentials:true}))
+ router.Use(cors.New(cors.Config{AllowOrigins: []string{getenv("FRONTEND_URL", "http://localhost:5173"), "http://localhost:5173", "http://192.168.31.46:5173"}, AllowMethods: []string{"GET","POST","OPTIONS"}, AllowHeaders: []string{"Origin","Content-Type","Authorization"}, AllowCredentials: true}))
  router.GET("/api/health", func(c *gin.Context){ c.JSON(200, gin.H{"message":"LivePoll API is running"}) })
  router.POST("/api/auth/signup", signup)
  router.POST("/api/auth/login", login)
