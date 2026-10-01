@@ -7,10 +7,6 @@ A live polling tool that allows users to create polls, share them, and view resu
 - Backend: Go + Gin
 - Database: MongoDB
 - Realtime: Redis Pub/Sub + Redis hash counters + Server-Sent Events (SSE)
-## Live Demo
-
-- Frontend: https://livepoll-frontend-utrs.onrender.com
-- Backend: https://livepoll-mn4b.onrender.com
 
 ## Live Demo
 
